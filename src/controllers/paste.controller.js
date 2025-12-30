@@ -43,7 +43,7 @@ export const createPaste = async (req, res) => {
       },
     });
 
-    const url = `${req.protocol}://${req.get("host")}/paste/${id}`;
+    const url = `${req.protocol}://${req.get("host")}/api/paste/${id}`;
 
     return res.json({ id, url });
   } catch (error) {
